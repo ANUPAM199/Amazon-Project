@@ -30,6 +30,7 @@ desiredCapabilities.setCapability("automationName","UIAutomator2");
 desiredCapabilities.setCapability("PlatformVersion","12");
 desiredCapabilities.setCapability("app",System.getProperty("user.dir")+"/src/test/resources/app/amazon-shopping-28-3-0-100.apk");
 desiredCapabilities.setCapability("newCommandTimeout",120);
+desiredCapabilities.setCapability("noRest",false);
 
         return desiredCapabilities;
     }
