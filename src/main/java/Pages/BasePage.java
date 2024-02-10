@@ -1,19 +1,19 @@
 package Pages;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
 public class BasePage {
-    AndroidDriver driver;
+    AppiumDriver driver;
     public static final int SHORT_WAIT=30;
     WebDriverWait webDriverWait;
-    public BasePage(AndroidDriver driver){
+    public BasePage(AppiumDriver driver){
         this.driver=driver;
          webDriverWait=new WebDriverWait(this.driver, Duration.ofSeconds(SHORT_WAIT));
     }
